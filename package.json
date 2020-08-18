@@ -1,0 +1,31 @@
+{
+  "name": "covergates",
+  "version": "0.1.6",
+  "description": "Covergates tools for NodeJS",
+  "main": "binary.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/covergates/covergates-node.git"
+  },
+  "keywords": [
+    "covergates"
+  ],
+  "author": "Benno Lin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/covergates/covergates-node/issues"
+  },
+  "homepage": "https://github.com/covergates/covergates-node#readme",
+  "dependencies": {
+    "binary-install": "0.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4"
+  }
+}
