@@ -1,4 +1,4 @@
-const { Binary } = require('binary-install');
+const Binary = require('./binary-install/binary');
 const os = require('os');
 
 const { version } = require('./package.json');
@@ -37,9 +37,10 @@ function getPlatform() {
 function getBinary() {
   const platform = getPlatform();
   const url = `${repository}/releases/download/v${version}`;
-  const binary = `covergates-v${version}-${platform}.zip`;
+  const binary = `covergates-v${version}-${platform}.tar.gz`;
   const name = 'covergates';
-  return new Binary(`${url}/${binary}`, { name });
+  const installDirectory = __dirname;
+  return new Binary(`${url}/${binary}`, { name, installDirectory });
 }
 
 const run = () => {

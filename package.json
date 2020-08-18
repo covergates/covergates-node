@@ -3,8 +3,10 @@
   "version": "0.1.6",
   "description": "Covergates tools for NodeJS",
   "main": "binary.js",
+  "bin": "./run.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "node ./install.js",
+    "test": "echo \"No test specified\""
   },
   "repository": {
     "type": "git",
@@ -19,13 +21,16 @@
     "url": "https://github.com/covergates/covergates-node/issues"
   },
   "homepage": "https://github.com/covergates/covergates-node#readme",
-  "dependencies": {
-    "binary-install": "0.0.1"
-  },
   "devDependencies": {
     "eslint": "^7.7.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "progress": "^2.0.3",
+    "rimraf": "^3.0.2",
+    "tar": "^6.0.5"
   }
 }
