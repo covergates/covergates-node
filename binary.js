@@ -15,9 +15,35 @@ function getPlatform() {
   const supportedPlatforms = [
     {
       TYPE: 'Linux',
+      ARCH: 'x32',
+      TARGET: 'linux-386'
+    },
+    {
+      TYPE: 'Linux',
       ARCH: 'x64',
       TARGET: 'linux-amd64',
     },
+    {
+      TYPE: 'Windows_NT',
+      ARCH: 'x32',
+      TARGET: 'windows-4.0-386'
+    },
+    {
+      TYPE: 'Windows_NT',
+      ARCH: 'x64',
+      TARGET: 'windows-4.0-amd64'
+    },
+    {
+      TYPE: 'Darwin',
+      ARCH: 'x32',
+      TARGET: 'darwin-10.6-386'
+    }
+    ,
+    {
+      TYPE: 'Darwin',
+      ARCH: 'x64',
+      TARGET: 'darwin-10.6-amd64'
+    }
   ];
 
   for (const platform of supportedPlatforms) {
