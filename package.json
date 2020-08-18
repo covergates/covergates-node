@@ -1,6 +1,6 @@
 {
   "name": "covergates",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Covergates tools for NodeJS",
   "main": "binary.js",
   "bin": "./run.js",
@@ -13,7 +13,8 @@
     "url": "git+https://github.com/covergates/covergates-node.git"
   },
   "keywords": [
-    "covergates"
+    "covergates",
+    "coverage"
   ],
   "author": "Benno Lin",
   "license": "MIT",
