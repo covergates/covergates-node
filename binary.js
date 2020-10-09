@@ -26,7 +26,7 @@ function getPlatform() {
     {
       TYPE: "Linux",
       ARCH: "arm",
-      TARGET: "linux-arm-5",
+      TARGET: "linux-arm",
     },
     {
       TYPE: "Linux",
@@ -36,22 +36,22 @@ function getPlatform() {
     {
       TYPE: "Windows_NT",
       ARCH: "x32",
-      TARGET: "windows-4.0-386",
+      TARGET: "windows-386",
     },
     {
       TYPE: "Windows_NT",
       ARCH: "x64",
-      TARGET: "windows-4.0-amd64",
+      TARGET: "windows-amd64",
     },
     {
       TYPE: "Darwin",
       ARCH: "x32",
-      TARGET: "darwin-10.6-386",
+      TARGET: "darwin-386",
     },
     {
       TYPE: "Darwin",
       ARCH: "x64",
-      TARGET: "darwin-10.6-amd64",
+      TARGET: "darwin-amd64",
     },
   ];
 
